@@ -1,0 +1,152 @@
+#topcontainer {
+    display: flex;
+    text-align: center;
+    background: rgb(187, 27, 27);
+    line-height: 60px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    justify-content: center;
+}
+
+#logo {
+    position: fixed;
+    float: left;
+    left: 0px;
+    top: 0px;
+}
+
+.navbar {
+    background: rgb(168, 23, 23);
+    line-height: 40px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+}
+
+.hyperlink {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    padding: 8px 25px;
+    margin: 0px 5px;
+    margin-top: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.hyperlink:hover {
+    border-radius: 5px;
+    background-color: rgb(129, 20, 20);
+    /*text-decoration: underline;*/
+}
+
+
+/*Body*/
+
+body {
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(171, 21, 21);
+}
+
+p,
+label,
+option,
+h3,
+h4,
+h5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#imgs {
+    border-radius: 10px;
+}
+
+.grid {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    margin: auto;
+    background-color: rgb(224, 224, 224);
+    gap: 25px 25px;
+    justify-content: center;
+}
+
+.grid>div {
+    border-radius: 10px;
+    padding: 30px;
+    background-color: white;
+}
+
+.grid>div>img {
+    background-color: white;
+}
+
+button {
+    color: rgb(171, 21, 21);
+    border-color: rgb(171, 21, 21);
+    border-style: ridge;
+    border-width: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 4px;
+    height: 30px;
+    width: 50%;
+}
+
+#submit,
+.but {
+    color: rgb(171, 21, 21);
+    border-color: rgb(171, 21, 21);
+    border-style: ridge;
+    border-width: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 4px;
+    height: 30px;
+    width: 25%;
+}
+
+#map {
+    margin: auto;
+}
+
+ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    text-align: center;
+    margin: auto;
+    width: 250px;
+    border-radius: 5px;
+}
+
+li {
+    list-style-type: square;
+    padding: 5px;
+    margin: 5px;
+}
+
+form {
+    width: 750px;
+    margin: auto;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+}
