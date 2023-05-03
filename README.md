@@ -1,1 +1,0 @@
-Project for CIS 393 (Kaboom Pizza Ordering System)

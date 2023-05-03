@@ -1,0 +1,19 @@
+{
+  "name": "cis393project",
+  "version": "1.0.0",
+  "description": "Project for CIS 393 (Kaboom Pizza Ordering System)",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dylan246/CIS393Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dylan246/CIS393Project/issues"
+  },
+  "homepage": "https://github.com/Dylan246/CIS393Project#readme"
+}

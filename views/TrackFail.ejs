@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div id="topcontainer">
+        <img src="logo.png" alt="logo" width="60px">
+        <header>&nbsp;&nbsp;Kaboom Pizza</header>
+    </div>
+
+    <nav class="navbar">
+        <a href="./HomePage.html" class="hyperlink">Home</a>
+        <a href="./Order.html" class="hyperlink">Order Now</a>
+        <a href="./Location.html" class="hyperlink">Location</a>
+        <a href="./Help.html" class="hyperlink">Help</a>
+        <a href="./Cart" class="hyperlink">View Cart</a>
+        <a href="./ManageOrders.html" class="hyperlink">Manage Orders</a>
+    </nav>
+
+    <link href="design.css" rel="stylesheet">
+    <script src="ManageOrders.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deletion Failure</title>
+</head>
+
+<body>
+    <h1>Invalid order information entered! Please try again.</h1>
+    <form method="POST" action="/track">
+        <p>Enter your order ID to track your order.</p>
+        <p>
+            <label for="order_number">Order ID:</label>
+            <input type="number" name="order_number" placeholder="Enter Order ID" required>
+        </p>
+        <button>Search</button>
+    </form>
+    <br>
+    <h3>Don't have your order ID? Track Your Order via Email Address!</h3>
+    <form method="POST" action="/trackEmail">
+        <p>Enter your email address to track your order.</p>
+        <p>
+            <label for="email_add">Email Address:</label>
+            <input type="email" name="email_add" placeholder="name@domain.com" required>
+        </p>
+        <button>Search</button>
+    </form>
+
+
+
+</body>
+
+</html>

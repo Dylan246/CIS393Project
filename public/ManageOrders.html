@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div id="topcontainer">
+        <img src="logo.png" alt="logo" width="60px">
+        <header>&nbsp;&nbsp;Kaboom Pizza</header>
+    </div>
+
+    <nav class="navbar">
+        <a href="./HomePage.html" class="hyperlink">Home</a>
+        <a href="./Order.html" class="hyperlink">Order Now</a>
+        <a href="./Location.html" class="hyperlink">Location</a>
+        <a href="./Help.html" class="hyperlink">Help</a>
+        <a href="./Cart" class="hyperlink">View Cart</a>
+        <a href="./ManageOrders.html" class="hyperlink">Manage Orders</a>
+    </nav>
+
+    <link href="design.css" rel="stylesheet">
+    <script src="ManageOrders.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Orders</title>
+</head>
+
+<body>
+    <h1>Order Manager</h1>
+    <form action="/display" id="box">
+        <h3>List of Active Orders:</h3>
+
+        <input type="submit" id="submit" value="View All Orders">
+    </form>
+    <br>
+
+    <form method="POST" action="/search">
+        <h3>Search for Order:</h3>
+        <p>
+            <label for="order_number">Order ID:&nbsp;</label>
+            <input type="number" name="order_number" placeholder="Enter Order ID" required>
+        </p>
+        <button>Search</button>
+    </form>
+
+    <br>
+    <form action="/delete" id="delete" method="POST">
+        <h3>Delete Order:</h3>
+
+        <label for="deleteID">Order ID:&nbsp;</label>
+        <input type="number" name="deleteID" id="deleteID" placeholder="Enter Order ID" required>
+        <br><br>
+        <input type="submit" id="submit" value="Delete An Order">
+    </form>
+    <br>
+
+    <form action="/updateStatus" id="updateStatus" method="POST">
+        <h3>Update Order Status:</h3>
+        <label for="orderID">Order ID:&nbsp;</label>
+        <input type="number" name="orderID" id="orderID" placeholder="Enter Order ID" required>
+        <br> <br>
+
+        <label for="orderID">Set Status:&nbsp;</label>
+        <select name="option" id="option" required>
+            <option value="Received">Received</option>
+            <option value="Canceled">Canceled</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Ready">Ready</option>
+            <option value="Picked Up">Picked Up</option>
+        </select><br><br>
+
+        <input type="submit" id="submit" value="Update Order Status">
+    </form>
+    <br>
+
+    <br><br><br>
+
+
+
+</body>
+
+</html>

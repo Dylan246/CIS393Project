@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div id="topcontainer">
+        <img src="logo.png" alt="logo" width="60px">
+        <header>&nbsp;&nbsp;Kaboom Pizza</header>
+    </div>
+
+    <nav class="navbar">
+        <a href="./HomePage.html" class="hyperlink">Home</a>
+        <a href="./Order.html" class="hyperlink">Order Now</a>
+        <a href="./Location.html" class="hyperlink">Location</a>
+        <a href="./Help.html" class="hyperlink">Help</a>
+        <a href="./Cart" class="hyperlink">View Cart</a>
+        <a href="./ManageOrders.html" class="hyperlink">Manage Orders</a>
+    </nav>
+
+    <link href="design.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+</head>
+
+<body>
+
+    <h1>Order Details</h1>
+    <p><b>Order ID:</b>
+        <%=data.order_id%>
+    </p>
+    <p><b>Order name:</b>
+        <%=data.name%>
+    </p>
+    <p><b>Order items:</b>
+        <%=data.items%>
+    </p>
+    <p><b>Order method:</b>
+        <%=data.method%>
+    </p>
+    <p style="color:rgb(0, 137, 7)"><b>Your order is currently... </b>
+        <%=data.status%>
+    </p>
+    <h1>Track Another Order</h1>
+
+    <form method="POST" action="/track">
+        <p>Enter an order ID to track an order.</p>
+        <p>
+            <label for="order_number">Order ID:</label>
+            <input type="number" name="order_number" placeholder="Enter Order ID" required>
+        </p>
+        <button>Search</button>
+    </form>
+</body>

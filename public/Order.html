@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div id="topcontainer">
+        <img src="logo.png" alt="logo" width="60px">
+        <header>&nbsp;&nbsp;Kaboom Pizza</header>
+    </div>
+
+    <nav class="navbar">
+        <a href="./HomePage.html" class="hyperlink">Home</a>
+        <a href="./Order.html" class="hyperlink">Order Now</a>
+        <a href="./Location.html" class="hyperlink">Location</a>
+        <a href="./Help.html" class="hyperlink">Help</a>
+        <a href="./Cart" class="hyperlink">View Cart</a>
+        <a href="./ManageOrders.html" class="hyperlink">Manage Orders</a>
+    </nav>
+
+    <script src="order.js"></script>
+    <link href="design.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaboom Pizza Menu</title>
+</head>
+
+<body>
+    <h1>Order Now</h1>
+    <h3>Select the menu items below that you would like to place into your cart for your order</h3>
+    <br>
+
+    <h1>Your Current Cart</h1>
+    <p id="message">Your cart is empty!</p>
+    <ul id="cart"></ul>
+    <input type="button" id="reset" class="but" value="Reset Cart">
+
+    <br><br>
+    <h1>Our Menu</h1>
+    <h3>Pizza</h3>
+    <div class="grid">
+        <div>
+            <h4>Cheese Pizza</h4>
+            <img src="cheese.jpg" alt="cheesepizza" width="200" id="imgs">
+            <p>Our handmade cheese pizza made up of 3 tasty cheeses</p>
+            <button type="button" value="Cheese Pizza" class="order">Add to Cart</button>
+        </div>
+        <div>
+            <h4>Pepperoni Pizza</h4>
+            <img src="pizza2.png" alt="pepperonipizza" width="200" id="imgs">
+            <p>Our classic pepperoni pizza is topped heavily with pepperoni</p>
+            <button type="button" value="Pepperoni Pizza" class="order">Add to Cart</button>
+        </div>
+        <div>
+            <h4>Sausage Pizza</h4>
+            <img src="sausage.png" alt="sausagepizza" width="200" id="imgs">
+            <p>Our delicious sausage pizza contains the finest beef</p>
+            <button type="button" value="Sausage Pizza" class="order">Add to Cart</button>
+        </div>
+    </div>
+
+    <h3>Pasta</h3>
+    <div class="grid">
+        <div>
+            <h4>Cheesy Alfredo</h4>
+            <img src="alfredo.jpg" alt="alfredo" width="200" id="imgs">
+            <p>Pasta in a cheesy alfredo sauce</p>
+            <button type="button" value="Cheesy Alredo" class="order">Add to Cart</button>
+        </div>
+        <div>
+            <h4>Spaghetti with Meatballs</h4>
+            <img src="spaghetti.jpg" alt="spaghetti" width="200" id="imgs">
+            <p>Spaghetti noodles topped with marinara sauce and meatballs</p>
+            <button type="button" value="Spaghetti" class="order">Add to Cart</button>
+        </div>
+        <div>
+            <h4>Mostaccioli</h4>
+            <img src="mosta.jpg" alt="mosta" width="200" id="imgs">
+            <p>Penne noodles in a basil tomato meat sauce</p>
+            <button type="button" value="Mostaccioli" class="order">Add to Cart</button>
+        </div>
+    </div>
+
+    <h3>Sides</h3>
+    <div class="grid">
+        <div>
+            <h4>Garlic Bread</h4>
+            <img src="garlicbread.jpg" alt="garlicbread" width="200" id="imgs">
+            <p>A large loaf of freshly baked and buttered garlic bread</p>
+            <button type="button" value="Garlic Bread" class="order">Add to Cart</button>
+        </div>
+        <div>
+            <h4>French Fries</h4>
+            <img src="fries.jpg" alt="fries" width="200" id="imgs">
+            <p>Shoestring fries topped with fine seasalt</p>
+            <button type="button" value="French Fries" class="order">Add to Cart</button>
+        </div>
+        <div>
+            <h4>Cheese Sticks</h4>
+            <img src="sticks.png" alt="sticks" width="200" id="imgs">
+            <p>Crispy fried mozerella cheeese sticks</p>
+            <button type="button" value="Cheese Sticks" class="order">Add to Cart</button>
+        </div>
+    </div>
+
+    <h3>Drinks</h3>
+    <div class="grid">
+        <div>
+            <h4>Lemonade</h4>
+            <img src="lemonade.png" alt="lemonade" width="200" id="imgs">
+            <p>Made of freshly squeezed lemons</p>
+            <button type="button" value="Lemonade" class="order">Add to Cart</button>
+        </div>
+        <div>
+            <h4>Water</h4>
+            <img src="water.png" alt="water" width="200" id="imgs">
+            <p>A bottle of water</p>
+            <button type="button" value="Water" class="order">Add to Cart</button>
+        </div>
+        <div>
+            <h4>Cola</h4>
+            <img src="cola.png" alt="cola" width="200" id="imgs">
+            <p>Chilled fizzy cola</p>
+            <button type="button" value="Cola" class="order">Add to Cart</button>
+        </div>
+    </div>
+
+
+    <h3>When you are done ordering, select <b style="color:rgb(183, 34, 34)">View Cart</b> in the menu bar to checkout or click the link below.</h3>
+    <br>
+    <h3>
+        <a href="./Cart" style="color:rgb(191, 41, 41);  margin: auto; border-radius: 5px;">Checkout & View Cart Here</a>
+    </h3>
+    <br><br>
+</body>
+
+</html>
